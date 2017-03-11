@@ -4,7 +4,7 @@
   "description": "getting started with React",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aso4/react-test.git"
+    "url": "git+https://github.com/aso4/react-test.git"
   },
   "engines": {
     "node": "7.4.0",
@@ -15,7 +15,7 @@
     "start": "webpack-dev-server --hot"
   },
   "author": "Albert So",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -23,6 +23,15 @@
     "webpack-dev-server": "^2.4.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0"
-  }
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/aso4/react-test/issues"
+  },
+  "homepage": "https://github.com/aso4/react-test#readme",
+  "keywords": [
+    "test"
+  ]
 }

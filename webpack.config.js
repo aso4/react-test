@@ -1,8 +1,10 @@
+var path = require('path');
+
 var config = {
    entry: './main.js', // webpack entry point
 
    output: {
-      path:'./',
+      path: path.join( __dirname, './dist/'),
       filename: 'index.js',
    },
 
@@ -16,7 +18,7 @@ var config = {
          {
             test: /\.jsx?$/,
             exclude: /node_modules/,
-            loader: 'babel',
+            loader: 'babel-loader',
 
             // set babel loaders to search for js files and use
             // es2015 and react presets installed with npm
