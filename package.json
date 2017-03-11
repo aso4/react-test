@@ -1,5 +1,5 @@
 {
-  "name": "React Test",
+  "name": "react-test",
   "version": "0.0.1",
   "description": "getting started with React",
   "repository": {
@@ -17,8 +17,8 @@
   },
   "author": "Albert So",
   "license": "ISC",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.23.0"
   }
 }
