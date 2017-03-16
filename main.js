@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+import StoryBox from './components.js';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<StoryBox />, document.getElementById('story-app'));
