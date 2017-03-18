@@ -1,37 +1,37 @@
 {
-  "name": "react-test",
-  "version": "0.0.1",
-  "description": "getting started with React",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aso4/react-test.git"
-  },
-  "engines": {
-    "node": "7.4.0",
-    "npm": "4.1.2"
-  },
-  "main": "main.js",
+  "name": "redux-simple-starter",
+  "version": "1.0.0",
+  "description": "Simple starter package for Redux with React and Babel support",
+  "main": "index.js",
+  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
   },
-  "author": "Albert So",
-  "license": "MIT",
-  "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.4.0"
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
-  "bugs": {
-    "url": "https://github.com/aso4/react-test/issues"
-  },
-  "homepage": "https://github.com/aso4/react-test#readme",
-  "keywords": [
-    "test"
-  ]
+  "dependencies": {
+    "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4"
+  }
 }
